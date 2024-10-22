@@ -16,7 +16,7 @@
 
 
 
- <h3> Swagger</h3>
+ <h3> Graphql</h3>
 
 
 
