@@ -17,7 +17,14 @@
 
 
  <h3> Graphql</h3>
+<img src="captures/img_10.png">
+ <h3> Consultation d'un compte</h3>
+<img src="captures/img_11.png">
+ <h3> Mutation</h3>
 
+<img src="captures/img_12.png">
+<img src="captures/img_13.png">
+<img src="captures/img_14.png">
 
 
 

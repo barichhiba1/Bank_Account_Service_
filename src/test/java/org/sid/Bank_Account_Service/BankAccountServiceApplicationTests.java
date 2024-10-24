@@ -7,11 +7,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.util.Date;
 import java.util.UUID;
 
 @SpringBootApplication
+@EnableJpaRepositories
 public class BankAccountServiceApplicationTests{
 
 	public static void main(String[] args) {

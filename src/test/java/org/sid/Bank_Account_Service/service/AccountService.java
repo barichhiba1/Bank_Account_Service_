@@ -8,4 +8,6 @@ public interface AccountService {
     BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountDTO);
 
     BankAccountRequestDTO addAccount(BankAccountResponseDTO bankAccountResponseDTO);
+
+    BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountDTO);
 }
