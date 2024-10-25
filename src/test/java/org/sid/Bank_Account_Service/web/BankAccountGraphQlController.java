@@ -6,7 +6,9 @@ import lombok.NoArgsConstructor;
 import org.sid.Bank_Account_Service.dto.BankAccountRequestDTO;
 import org.sid.Bank_Account_Service.dto.BankAccountResponseDTO;
 import org.sid.Bank_Account_Service.entities.BankAccount;
+import org.sid.Bank_Account_Service.entities.Customer;
 import org.sid.Bank_Account_Service.repository.BankAccountRepository;
+import org.sid.Bank_Account_Service.repository.CustomerRepository;
 import org.sid.Bank_Account_Service.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -22,6 +24,8 @@ public class BankAccountGraphQlController {
     private BankAccountRepository bankAccountRepository;
     @Autowired
     private AccountService accountService;
+    @Autowired
+    private CustomerRepository customerRepository;
 
     @QueryMapping
     public List<BankAccount> accountList() {
@@ -48,5 +52,11 @@ public class BankAccountGraphQlController {
 bankAccountRepository.deleteById(id);
 return  true ;
     }
+    @QueryMapping
+    public  List<Customer> customers(){
+        return  customerRepository.findAll();
+
+    }
 
 }
+//graphql est plus optimisé que rest
