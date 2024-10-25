@@ -20,7 +20,7 @@
 <img src="captures/img_7.png">
 
 
-
+<h1>La partie 2</h1>
  <h3> Graphql</h3>
 <img src="captures/img_10.png">
  <h3> Consultation d'un compte</h3>
